@@ -1,19 +1,21 @@
 ---
 import Astroicon from "../icons/Astroicon.astro";
-import Boostrap from "../icons/Boostrap.astro";
+import React from "../icons/React.astro";
 import CSS from "../icons/CSS.astro";
 import Django from "../icons/Django.astro";
 import Html from "../icons/Html.astro";
-
+import { SiPostgresql } from 'react-icons/si';
 import JavaScript from "../icons/JavaScript.astro";
 import Mysql from "../icons/Mysql.astro";
 import Python from "../icons/Python.astro";
 import Tailwind from "../icons/Tailwind.astro";
+
+
 ---
 
 <nav class="flex flex-row gap-x-5 xl:gap-x-10 opacity-80 justify-center">
   <ul class="flex flex-col gap-y-2 justify-center items-center text-center">
-    <h2 class="font-bold text-2xl text-green-300 mb-5">Frontend</h2>
+    <h2 class="font-bold text-2xl text-cyan-300 mb-5">Frontend</h2>
 
     <ul
       class="flex flex-col text-white md:flex-row lg:flex-row xl:flex-row gap-y-2"
@@ -25,21 +27,22 @@ import Tailwind from "../icons/Tailwind.astro";
     <ul
       class="flex flex-col md:flex-row text-white lg:flex-row xl:flex-row gap-y-2"
     >
-      <li><Boostrap class="size-20" />Boostrap</li>
+      <li><React class="size-20" />React</li>
       <li><Tailwind class="size-20" />Tailwind</li>
       <li><Astroicon class="size-20" />Astro</li>
     </ul>
   </ul>
 
   <ul class="flex flex-col gap-y-2 text-white text-center items-center">
-    <h2 class="font-semibold text-2xl text-green-300 mb-5">Backend</h2>
+    <h2 class="font-semibold text-2xl text-cyan-300 mb-5">Backend</h2>
 
     <li><Python class="size-20" />Python</li>
     <li><Django class="size-20" />Django</li>
   </ul>
 
   <ul class="flex flex-col gap-y-2 text-white text-center">
-    <h2 class="font-semibold text-2xl text-green-300 mb-5">DB</h2>
+    <h2 class="font-semibold text-2xl text-cyan-300 mb-5">DB</h2>
     <li><Mysql class="size-20" />MySQL</li>
+    
   </ul>
 </nav>
